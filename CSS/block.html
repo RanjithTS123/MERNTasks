@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        #box1{
+            height: 300px;
+            width: 300px;
+            background-color: blueviolet;
+            margin: 5px;
+        }
+        #box2{
+            height: 300px;
+            width: 300px;
+            background-color: brown;
+            margin: 5px;
+        }
+        @media screen and (max-width:680px){
+            .container{
+                display: block;
+            }
+       }
+ @media screen and (orientation:portrait){ 
+            .container{
+                background-color: coral;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </div>
+</body>
+</html>

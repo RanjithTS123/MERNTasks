@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            background-color: tan;
+            height: 300px;
+            width: 300px;
+            position: relative;
+            animation-name:changecolor;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            margin-left: auto;
+            
+        }
+        @keyframes changecolor{
+            0%{
+                background-color: honeydew;
+                top: 0px;
+                left: 0px;
+
+            }
+            50%{
+                background-color: brown;
+                top: 50px;
+                left: 100px;
+            }
+            100%{
+                background-color: chartreuse;
+                top: 100px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

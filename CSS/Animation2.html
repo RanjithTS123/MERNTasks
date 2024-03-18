@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: gold;
+            position: relative;
+            width: 350px;
+            height: 300px;
+            border-radius: 150px;
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+            animation-delay:1s
+        }
+
+        @keyframes rotate{
+            0%{
+                left: 0;
+                transform: rotate(0deg);
+             }
+             50%{
+                left:50%;
+                transform: rotate(360deg);
+             }
+             100%{
+                left:100%
+                transform:rotate(-45deg)
+             }
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>
